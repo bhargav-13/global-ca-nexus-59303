@@ -9,6 +9,7 @@ import CaseStudies from "@/components/CaseStudies";
 import Insights from "@/components/Insights";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Appointment from "@/components/Appointment";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <Industries />
       <Team />
       <CaseStudies />
+      <Appointment />
       <Insights />
       <Contact />
       <Footer />

@@ -3,42 +3,80 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const Team = () => {
-  const teamMembers = [
+  const coreTeam = [
     {
-      name: "CA Vrajkishor R. Changani",
-      title: "Senior Partner",
-      credentials: ["ACA"],
+      name: "Mr. Prashant D. Dobariya",
+      title: "Principal",
+      credentials: ["CA (ICAI)", "B.Com", "NISM (Derivatives)"],
       image: "/placeholder.svg",
-      bio: "Experienced chartered accountant specializing in taxation, auditing, and financial advisory services with deep expertise in business compliance and strategic financial planning.",
+      bio: "Expert in the field of Consulting & Advisory Services, Statutory Auditor, Internal Auditor.",
       linkedin: "#",
       email: "info@drspv.in",
     },
     {
-      name: "CA Sreekunj N. Vasoya",
-      title: "Senior Partner",
-      credentials: ["ACA"],
+      name: "Mr. Vrajkishor R. Changani",
+      title: "Principal",
+      credentials: ["CA (ICAI)", "B.Com", "NISM (Derivatives)"],
       image: "/placeholder.svg",
-      bio: "Expert in corporate matters, statutory compliance, and international accounting standards with extensive experience in cross-border transactions and regulatory compliance.",
+      bio: "Investment Planner, Services in the field of Audit and Assurance, Taxation and its related matters.",
       linkedin: "#",
       email: "info@drspv.in",
     },
     {
-      name: "CA Prashant D. Dobariya",
-      title: "Senior Partner",
-      credentials: ["ACA"],
+      name: "Mr. Sreekunj N. Vasoya",
+      title: "Principal",
+      credentials: ["CA (ICAI)", "B.Com", "NISM (Derivatives)"],
       image: "/placeholder.svg",
-      bio: "Specializes in audit and assurance services, internal controls, and financial reporting with proven track record in serving diverse industries and global clients.",
+      bio: "Expert in the field of Consulting & Advisory Services and Bank Audit.",
       linkedin: "#",
       email: "info@drspv.in",
+    },
+  ];
+
+  const associates = [
+    {
+      name: "Mr. Durgesh M. Chavda",
+      credentials: ["CA (ICAI)", "M.Com"],
+      bio: "Expert in the field of System audit, Start up Consultant, Bank Audit & Corporate Consultant.",
+    },
+    {
+      name: "Mr. Yash M. Simariya",
+      credentials: ["CA (ICAI)", "ACCA (UK)"],
+      bio: "Expert in the field of Consulting & Advisory Services, Statutory Auditor, Internal Auditor.",
+    },
+    {
+      name: "Mr. Milan P. Sakhiya",
+      credentials: ["CS (ICSI)", "B.Com"],
+      bio: "Expert in the field of FEMA & RBI Consulting & Advisory Services, Investment Planner.",
+    },
+    {
+      name: "Ms. Bhakti Somaiya",
+      credentials: ["CA (ICAI)", "B.Com"],
+      bio: "Expert in the field of RERA, Income Tax & Foreign Accounting and Reporting.",
+    },
+    {
+      name: "Mrs. Kanish Shah",
+      credentials: ["CA (Inter)", "B.com"],
+      bio: "Expert in the field of US entity formation, Taxation, Bookkeeping and Reporting",
+    },
+    {
+      name: "Mr. Ravi Vadodariya",
+      credentials: ["CA (Inter)", "B.com"],
+      bio: "Expert in the field of bookkeeping and taxation.",
+    },
+    {
+      name: "Mr. Prashant A. Hirpara",
+      credentials: ["Banking & Finance Expert"],
+      bio: "Expert in the field of Banking, Loan & Project Finances management, Project Financial Manager",
     },
   ];
 
   return (
     <section id="team" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
+        {/* Core Team Section */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <Badge className="mb-4 bg-primary text-primary-foreground">Our Team</Badge>
+          <Badge className="mb-4 bg-primary text-primary-foreground">Our Core Team</Badge>
           <h2 className="mb-4">
             Meet Our <span className="text-primary">Expert Team</span>
           </h2>
@@ -47,9 +85,9 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
+        {/* Core Team Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+          {coreTeam.map((member, index) => (
             <Card
               key={index}
               className="group hover:shadow-professional transition-smooth overflow-hidden"
@@ -96,6 +134,36 @@ const Team = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Associates Section */}
+        <div className="border-t border-border pt-20">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <Badge className="mb-4 bg-accent text-accent-foreground">Other Associates & Advisors</Badge>
+            <h2 className="mb-4">
+              Our Extended <span className="text-primary">Professional Network</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {associates.map((associate, index) => (
+              <Card key={index} className="hover:shadow-lg transition-smooth">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">{associate.name}</h3>
+                  
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {associate.credentials.map((credential, idx) => (
+                      <Badge key={idx} variant="secondary" className="text-xs">
+                        {credential}
+                      </Badge>
+                    ))}
+                  </div>
+                  
+                  <p className="text-sm text-muted-foreground">{associate.bio}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>

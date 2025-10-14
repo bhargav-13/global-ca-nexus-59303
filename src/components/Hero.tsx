@@ -1,4 +1,4 @@
-import { ArrowRight, Globe, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, Globe, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-global-accounting.jpg";
 
@@ -64,21 +64,16 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl">
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6">
-              <TrendingUp className="w-8 h-8 text-accent mb-3" />
-              <div className="text-3xl font-bold text-white mb-1">50+</div>
-              <div className="text-sm text-white/80">IPO Consultancies</div>
+              <Users className="w-8 h-8 text-accent mb-3" />
+              <div className="text-3xl font-bold text-white mb-1">6+</div>
+              <div className="text-sm text-white/80">Years of Excellence</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6">
               <Globe className="w-8 h-8 text-accent mb-3" />
-              <div className="text-3xl font-bold text-white mb-1">100+</div>
+              <div className="text-3xl font-bold text-white mb-1">250+</div>
               <div className="text-sm text-white/80">Global Clients</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6">
-              <Users className="w-8 h-8 text-accent mb-3" />
-              <div className="text-3xl font-bold text-white mb-1">15+</div>
-              <div className="text-sm text-white/80">Years of Excellence</div>
             </div>
           </div>
         </div>

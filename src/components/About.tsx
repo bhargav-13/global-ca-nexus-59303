@@ -1,4 +1,4 @@
-import { Award, Target, Eye, Users, Shield, TrendingUp } from "lucide-react";
+import { Award, Target, Eye, Users, Shield, TrendingUp, BookOpen } from "lucide-react";
 
 const About = () => {
   return (
@@ -69,6 +69,39 @@ const About = () => {
                   <div className="font-semibold text-foreground">Expert Team</div>
                   <div className="text-sm text-muted-foreground">
                     20+ qualified professionals
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">Xero Certified</div>
+                  <div className="text-sm text-muted-foreground">
+                    Certified Xero Advisor Partner
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">QuickBooks Experience</div>
+                  <div className="text-sm text-muted-foreground">
+                    QuickBooks Accounting Expertise
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">Zoho Books Partner</div>
+                  <div className="text-sm text-muted-foreground">
+                    Official Zoho Books Partner
                   </div>
                 </div>
               </div>

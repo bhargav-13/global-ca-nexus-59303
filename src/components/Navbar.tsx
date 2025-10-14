@@ -36,10 +36,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-2">
-            <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">DRSPV</span>
-            </div>
+          <a href="#home" className="flex items-center space-x-3">
+            <img 
+              src="ca_logo.jpg" 
+              alt="DRSPV & Associates" 
+              className="h-16 w-auto object-contain"
+            />
             <div className="hidden md:block">
               <div className="font-bold text-lg text-foreground">DRSPV & Associates</div>
               <div className="text-xs text-muted-foreground">Chartered Accountants</div>

@@ -77,18 +77,14 @@ const WhyChooseUs = () => {
 
         {/* Trust Indicators */}
         <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 md:p-12 border border-primary/10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">15+</div>
+              <div className="text-4xl font-bold text-primary mb-2">6+</div>
               <div className="text-sm text-muted-foreground">Years of Excellence</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-4xl font-bold text-primary mb-2">250+</div>
               <div className="text-sm text-muted-foreground">Happy Clients</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">IPO Completions</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">95%</div>

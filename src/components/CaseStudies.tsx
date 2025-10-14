@@ -14,15 +14,6 @@ const CaseStudies = () => {
       badge: "Bookkeeping",
     },
     {
-      company: "GreenEnergy Solutions",
-      industry: "Renewable Energy",
-      country: "India",
-      quote:
-        "Their IPO consultancy team guided us through every step. The attention to detail and compliance knowledge was exceptional.",
-      result: "Successful IPO, ₹500Cr raised",
-      badge: "IPO Consultancy",
-    },
-    {
       company: "RetailPro UK Ltd.",
       industry: "E-commerce",
       country: "UK",
@@ -34,10 +25,10 @@ const CaseStudies = () => {
   ];
 
   const stats = [
-    { label: "Average Time Saved", value: "60%" },
-    { label: "Client Satisfaction", value: "98%" },
-    { label: "Cost Reduction", value: "45%" },
-    { label: "Compliance Rate", value: "100%" },
+    { label: "Average Time Saved", value: "60%", color: "from-blue-500 to-cyan-500" },
+    { label: "Client Satisfaction", value: "98%", color: "from-purple-500 to-pink-500" },
+    { label: "Cost Reduction", value: "45%", color: "from-orange-500 to-red-500" },
+    { label: "Compliance Rate", value: "100%", color: "from-green-500 to-emerald-500" },
   ];
 
   return (
@@ -54,7 +45,7 @@ const CaseStudies = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
           {testimonials.map((item, index) => (
             <Card key={index} className="hover:shadow-professional transition-smooth">
               <CardContent className="p-6">
@@ -80,16 +71,22 @@ const CaseStudies = () => {
           ))}
         </div>
 
-        {/* Stats */}
-        <div className="bg-card border border-border rounded-2xl p-8 md:p-12">
-          <h3 className="text-center mb-8">Measurable Impact</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {/* Stats - Trendy Version */}
+        <div className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-accent/5 to-primary/5 rounded-3xl p-8 md:p-12 border border-primary/10">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
+          
+          <h3 className="text-center mb-12 relative z-10">Measurable Impact</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 relative z-10">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-5xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
-                  {stat.value}
+              <div key={index} className="text-center group">
+                <div className="relative inline-block mb-4">
+                  <div className={`text-5xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent transition-transform group-hover:scale-110 duration-300`}>
+                    {stat.value}
+                  </div>
+                  <div className={`absolute inset-0 bg-gradient-to-r ${stat.color} opacity-20 blur-xl group-hover:opacity-30 transition-opacity`}></div>
                 </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-sm text-muted-foreground font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
