@@ -30,9 +30,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">DRSPV</span>
-              </div>
+              <img
+                src="ca_logo_2.png"
+                alt="DRSPV & Associates"
+                className="h-16 w-auto object-contain"
+              />
               <div>
                 <div className="font-bold text-background">DRSPV & Associates</div>
                 <div className="text-xs text-background/70">Chartered Accountants</div>

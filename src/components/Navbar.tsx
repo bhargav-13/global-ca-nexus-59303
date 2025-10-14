@@ -38,7 +38,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#home" className="flex items-center space-x-3">
             <img 
-              src="ca_logo.jpg" 
+              src="ca_logo_2.png" 
               alt="DRSPV & Associates" 
               className="h-16 w-auto object-contain"
             />
