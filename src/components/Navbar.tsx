@@ -40,11 +40,11 @@ const Navbar = () => {
             <img 
               src="ca_logo_2.png" 
               alt="DRSPV & Associates" 
-              className="h-16 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
             <div className="hidden md:block">
               <div className="font-bold text-lg text-foreground">DRSPV & Associates</div>
-              <div className="text-xs text-muted-foreground">Chartered Accountants</div>
+              <div className="text-xs text-foreground">Chartered Accountants</div>
             </div>
           </a>
 

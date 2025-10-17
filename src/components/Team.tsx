@@ -8,7 +8,7 @@ const Team = () => {
       name: "Mr. Prashant D. Dobariya",
       title: "Principal",
       credentials: ["CA (ICAI)", "B.Com", "NISM (Derivatives)"],
-      image: "/placeholder.svg",
+      image: "/prashant.jpeg",
       bio: "Expert in the field of Consulting & Advisory Services, Statutory Auditor, Internal Auditor.",
       linkedin: "#",
       email: "info@drspv.in",
@@ -17,7 +17,7 @@ const Team = () => {
       name: "Mr. Vrajkishor R. Changani",
       title: "Principal",
       credentials: ["CA (ICAI)", "B.Com", "NISM (Derivatives)"],
-      image: "/placeholder.svg",
+      image: "/vivek.jpeg",
       bio: "Investment Planner, Services in the field of Audit and Assurance, Taxation and its related matters.",
       linkedin: "#",
       email: "info@drspv.in",
@@ -26,7 +26,7 @@ const Team = () => {
       name: "Mr. Sreekunj N. Vasoya",
       title: "Principal",
       credentials: ["CA (ICAI)", "B.Com", "NISM (Derivatives)"],
-      image: "/placeholder.svg",
+      image: "/sreekunj.jpeg",
       bio: "Expert in the field of Consulting & Advisory Services and Bank Audit.",
       linkedin: "#",
       email: "info@drspv.in",
@@ -97,7 +97,7 @@ const Team = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-64 object-cover transition-smooth group-hover:scale-110"
+                    className="w-full h-80 object-cover transition-smooth group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-end justify-center pb-4 space-x-3">
                     <a
