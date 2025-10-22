@@ -108,12 +108,12 @@ const Footer = () => {
             <ul className="space-y-3 mb-6">
               <li className="flex items-start space-x-2 text-sm text-background/80">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>Rajkot, Gujarat, India</span>
+                <span>510, RK World Tower, Shital Park, 150 ft. Ring Road, Rajkot, Gujarat - 360006, IN.</span>
               </li>
               <li className="flex items-start space-x-2 text-sm text-background/80">
                 <Phone className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <a href="tel:+919999999999" className="hover:text-accent transition-smooth">
-                  +91 99999 99999
+                <a href="tel:+917777970565" className="hover:text-accent transition-smooth">
+                  +91 7777-970-565
                 </a>
               </li>
               <li className="flex items-start space-x-2 text-sm text-background/80">

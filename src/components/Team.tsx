@@ -10,7 +10,7 @@ const Team = () => {
       credentials: ["CA (ICAI)", "B.Com", "NISM (Derivatives)"],
       image: "/prashant.jpeg",
       bio: "Expert in the field of Consulting & Advisory Services, Statutory Auditor, Internal Auditor.",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/prashantpatel29/",
       email: "info@drspv.in",
     },
     {
@@ -19,7 +19,7 @@ const Team = () => {
       credentials: ["CA (ICAI)", "B.Com", "NISM (Derivatives)"],
       image: "/vivek.jpeg",
       bio: "Investment Planner, Services in the field of Audit and Assurance, Taxation and its related matters.",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/ca-vrajkishor-changani-4ab685219/",
       email: "info@drspv.in",
     },
     {
@@ -28,7 +28,7 @@ const Team = () => {
       credentials: ["CA (ICAI)", "B.Com", "NISM (Derivatives)"],
       image: "/sreekunj.jpeg",
       bio: "Expert in the field of Consulting & Advisory Services and Bank Audit.",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/ca-sreekunj-vasoya-5ab3169a/",
       email: "info@drspv.in",
     },
   ];
@@ -97,7 +97,7 @@ const Team = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-80 object-cover transition-smooth group-hover:scale-110"
+                    className="w-full h-100 object-cover transition-smooth group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-end justify-center pb-4 space-x-3">
                     <a
